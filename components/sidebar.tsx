@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { FreeCounter } from "../components/free-counter"
 import {
   Code,
   ImageIcon,
@@ -64,7 +65,13 @@ const routes = [
   },
 ];
 
-const Sidebar = () => {
+interface SidebarProps {
+  apiLimitCount: number;
+}
+
+const Sidebar = ({
+  apiLimitCount = 0
+}: SidebarProps) => {
   const pathname = usePathname();
   return (
     <div
@@ -104,6 +111,9 @@ const Sidebar = () => {
           ))}
         </div>
       </div>
+      <FreeCounter 
+        apiLimitCount={apiLimitCount}
+      />
     </div>
   );
 };
