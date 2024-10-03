@@ -23,6 +23,7 @@
     "axios": "^1.7.7",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "install": "^0.13.0",
     "lucide-react": "^0.441.0",
     "next": "14.2.11",
     "openai": "3.3.0",
@@ -31,9 +32,11 @@
     "react-hook-form": "^7.53.0",
     "react-markdown": "^8.0.7",
     "replicate": "^0.12.3",
+    "stripe": "^12.13.0",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
-    "zod": "^3.23.8"
+    "zod": "^3.23.8",
+    "zustand": "^4.3.9"
   },
   "devDependencies": {
     "@types/node": "^20",
