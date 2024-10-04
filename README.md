@@ -2,7 +2,7 @@
 
 <!-- -------------------------------------------------------------------------- -->
 <!-- HEADING STUFF  -->
-<div align="center">
+<div>
   <h2>British Computer Society Capstone Project</h2>
   <h4>Inception_AI<h4>
   <h3> 

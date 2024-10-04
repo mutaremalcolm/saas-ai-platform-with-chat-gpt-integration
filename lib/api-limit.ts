@@ -1,4 +1,4 @@
-import { auth, authMiddleware } from "@clerk/nextjs";
+import { auth } from "@clerk/nextjs";
 
 import prismadb from "@/lib/prismadb";
 import { MAX_FREE_COUNTS } from "@/constants";
