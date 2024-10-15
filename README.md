@@ -3,10 +3,11 @@
 <!-- -------------------------------------------------------------------------- -->
 <!-- HEADING STUFF  -->
 <div>
+<div align="center">
   <h2>British Computer Society Capstone Project</h2>
   <h4>Inception_AI<h4>
   <h3> 
-    <a href='https://thymia-mutaremalcolms-projects.vercel.app/' target='_blank'>
+    <a href='https://saa-s-ai-platform-with-chat-gpt-integration.vercel.app//' target='_blank'>
       <h5>live demo ↗</h5>
     </a>
   </h3>
@@ -21,7 +22,7 @@
 <!-- -------------------------------------------------------------------------- -->
 
 ### 👋 Introduction:
-
+</div>
 ---
 
 Inception AI is a SaaS platform leveraging ChatGPT to deliver advanced AI functionalities through a user-friendly interface. Designed to streamline workflows and boost productivity, the platform integrates five core AI tools, providing both free and paid tiers to meet various user needs.
@@ -86,4 +87,4 @@ Inception AI aims to democratize advanced AI functionalities through a user-frie
 <!-- -------------------------------------------------------------------------- -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<br/> <br/># martin_mills
+
