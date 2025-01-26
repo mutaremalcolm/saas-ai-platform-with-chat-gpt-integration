@@ -31,7 +31,7 @@ export async function POST(req: Request) {
     }
 
     const response = await replicate.run(
-      "minimax/video-01:",
+      "anotherjesse/zeroscope-v2-xl:9f747673945c62801b13b84701c783929c0ee784e4748ec062204894dda1a351",
       {
         input: {
           prompt_a: prompt,
