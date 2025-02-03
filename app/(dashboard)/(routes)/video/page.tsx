@@ -16,7 +16,7 @@ import { Empty } from "@/components/empty";
 import { Loader } from "@/components/loader";
 import { useProModal } from "@/hooks/use-pro-modal";
 import toast from "react-hot-toast";
-
+import React from "react";
 
 const VideoPage = () => {
   const router = useRouter();
@@ -36,20 +36,39 @@ const VideoPage = () => {
     try {
       setVideo(undefined);
       
-      const response = await axios.post("/api/video", values);
+      // Set responseType to 'blob' to handle video data
+      const response = await axios.post("/api/video", values, {
+        responseType: 'blob'
+      });
+
+      // Create a Blob URL from the response
+      const videoBlob = new Blob([response.data], { type: 'video/mp4' });
+      const videoUrl = URL.createObjectURL(videoBlob);
       
-      setVideo(response.data[0]);
+      console.log("Video Blob URL created:", videoUrl);
+      setVideo(videoUrl);
       form.reset();
+      
     } catch (error: any) {
+      console.error("Video generation error:", error);
       if (error?.response?.status === 403) {
         proModal.onOpen();
-        }else {
-          toast.error("Something went wrong");
-        }
+      } else {
+        toast.error("Something went wrong generating the video");
+      }
     } finally {
       router.refresh();
     }
   };
+
+  // Cleanup Blob URL when component unmounts or video changes
+  React.useEffect(() => {
+    return () => {
+      if (video) {
+        URL.revokeObjectURL(video);
+      }
+    };
+  }, [video]);
 
   return (
     <div>
@@ -95,7 +114,10 @@ const VideoPage = () => {
                   </FormItem>
                 )}
               />
-              <Button className="col-span-12 lg:col-span-2 w-full" disabled={isLoading}>
+              <Button 
+                className="col-span-12 lg:col-span-2 w-full" 
+                disabled={isLoading}
+              >
                 Generate
               </Button>
             </form>
@@ -103,9 +125,8 @@ const VideoPage = () => {
         </div>
         <div className="space-y-4 mt-4">
           {isLoading && (
-            <div className="p-8 rounded-lg w-full flex items-center
-            justify-center bg-muted">
-            <Loader />
+            <div className="p-8 rounded-lg w-full flex items-center justify-center bg-muted">
+              <Loader />
             </div>
           )}
           {!video && !isLoading && (
@@ -114,8 +135,14 @@ const VideoPage = () => {
             </div>
           )}
           {video && (
-            <video className="w-full aspect-video mt-8 rounded-lg border bg-black" controls>
-              <source src={video}/>
+            <video 
+              className="w-full aspect-video mt-8 rounded-lg border bg-black" 
+              controls
+              key={video}
+              autoPlay
+            >
+              <source src={video} type="video/mp4" />
+              Your browser does not support the video tag.
             </video>
           )}
         </div>
@@ -125,3 +152,4 @@ const VideoPage = () => {
 };
 
 export default VideoPage;
+ 
