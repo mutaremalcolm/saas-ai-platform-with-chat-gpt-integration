@@ -3,9 +3,8 @@
 import axios from "axios";
 import * as z from "zod";
 import { Heading } from "@/components/heading";
-import { Music } from "lucide-react";
+import { MusicIcon } from "lucide-react";
 import { useForm } from "react-hook-form";
-import { formSchema } from "./constants";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
@@ -17,17 +16,30 @@ import { Loader } from "@/components/loader";
 import { useProModal } from "@/hooks/use-pro-modal";
 import toast from "react-hot-toast";
 
+// Define the form schema for audio generation
+const formSchema = z.object({
+  prompt: z.string().min(1, {
+    message: "Audio prompt is required.",
+  }),
+  model_version: z.string().optional(),
+  output_format: z.string().optional(),
+  normalization_strategy: z.string().optional()
+});
 
-
-const MusicPage = () => {
-  const proModal = useProModal();
+const AudioPage = () => {
   const router = useRouter();
-  const [music, setMusic] = useState<string>();
+  const proModal = useProModal();
+  const [audio, setAudio] = useState<string>();
+  const [error, setError] = useState<string>();
+  const [debugInfo, setDebugInfo] = useState<string>();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       prompt: "",
+      model_version: "stereo-large",
+      output_format: "mp3",
+      normalization_strategy: "peak"
     },
   });
 
@@ -35,18 +47,42 @@ const MusicPage = () => {
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
-      setMusic(undefined);
+      setAudio(undefined);
+      setError(undefined);
+      setDebugInfo(undefined);
+
+      const response = await axios.post("/api/music", values);
       
-      const response = await axios.post("/api/music", values); 
+      console.log("Full response:", response);
+      console.log("Response data:", response.data);
       
-      setMusic(response.data.audio);
+      if (response.data?.url) {
+        setAudio(response.data.url);
+        setDebugInfo(`Audio URL: ${response.data.url}`);
+      } else {
+        console.error("Unexpected response format:", response.data);
+        setDebugInfo(`Unexpected response format: ${JSON.stringify(response.data)}`);
+        throw new Error('Invalid audio response format');
+      }
+
       form.reset();
+      
     } catch (error: any) {
+      console.error("Full error object:", error);
+      
+      let errorMessage = "Something went wrong generating the audio";
+      
       if (error?.response?.status === 403) {
         proModal.onOpen();
-        }else {
-          toast.error("Something went wrong");
-        } 
+      } else if (error?.response?.data?.error) {
+        errorMessage = error.response.data.error;
+        setDebugInfo(`Server Error Details: ${error.response.data.details || 'No details provided'}`);
+      } else if (error?.message) {
+        errorMessage = error.message;
+      }
+      
+      setError(errorMessage);
+      toast.error(errorMessage);
     } finally {
       router.refresh();
     }
@@ -55,14 +91,13 @@ const MusicPage = () => {
   return (
     <div>
       <Heading
-        title="Music Generation"
-        description="Turn your prompt into music"
-        icon={Music}
+        title="Audio Generation"
+        description="Turn your prompt into audio"
+        icon={MusicIcon}
         iconColor="text-emerald-500"
-        bgColor="bg-violet-500/10"
+        bgColor="bg-emerald-500/10"
       />
       <div className="px-4 lg:px-8">
-        <div>
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(onSubmit)}
@@ -89,35 +124,58 @@ const MusicPage = () => {
                                     focus-visible:ring-0
                                     focus-visible:ring-transparent"
                         disabled={isLoading}
-                        placeholder="Piano Solo"
+                        placeholder="Generate triumphant cinematic music with crescendo"
                         {...field}
                       />
                     </FormControl>
                   </FormItem>
                 )}
               />
-              <Button className="col-span-12 lg:col-span-2 w-full" disabled={isLoading}>
+              <Button 
+                className="col-span-12 lg:col-span-2 w-full" 
+                disabled={isLoading}
+              >
                 Generate
               </Button>
             </form>
           </Form> 
-        </div>
-        <div className="space-y-4 mt-4">
+          <div className="space-y-4 mt-4">
           {isLoading && (
-            <div className="p-8 rounded-lg w-full flex items-center
-            justify-center bg-muted">
-            <Loader />
+            <div className="p-8 rounded-lg w-full flex items-center justify-center bg-muted">
+              <Loader />
             </div>
           )}
-          {!music && !isLoading && (
-            <div>
-              <Empty label="No music generated"/>
+          {!audio && !isLoading && !error && (
+            <Empty label="No audio generated"/>
+          )}
+          {error && (
+            <div className="p-4 rounded-lg w-full bg-red-50 border border-red-200">
+              <p className="text-red-800">{error}</p>
+              {debugInfo && (
+                <p className="mt-2 text-sm text-red-600">{debugInfo}</p>
+              )}
             </div>
           )}
-          {music && (
-            <audio controls className="w-full mt-8">
-              <source src={music}/>
-            </audio>
+          {audio && (
+            <div className="p-4 rounded-lg w-full bg-white shadow">
+              <audio
+                controls
+                className="w-full"
+                key={audio}
+                onError={(e) => {
+                  console.error("Audio playback error:", e);
+                  setError("Failed to play audio. Please try again.");
+                  setDebugInfo(`Attempted to play: ${audio}`);
+                }}
+                autoPlay={false}
+              >
+                <source src={audio} type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+              {debugInfo && (
+                <p className="mt-2 text-sm text-gray-500">{debugInfo}</p>
+              )}
+            </div>
           )}
         </div>
       </div>
@@ -125,4 +183,5 @@ const MusicPage = () => {
   );
 };
 
-export default MusicPage;
+
+export default AudioPage;
