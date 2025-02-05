@@ -16,6 +16,7 @@ const instructionMessage: ChatCompletionRequestMessage = {
 }
 const openai = new OpenAIApi(configuration);
 
+
 export async function POST(
     req: Request
 ) {

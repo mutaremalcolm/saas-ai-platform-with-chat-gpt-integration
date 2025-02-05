@@ -9,11 +9,32 @@ const replicate = new Replicate({
   auth: process.env.REPLICATE_API_TOKEN || "",
 });
 
+type VideoRequestBody = {
+  prompt: string;
+  prompt_optimizer?: boolean;
+  first_frame_image?: string;
+  subject_reference?: string;
+};
+
+const isValidUri = (uri: string): boolean => {
+  try {
+    new URL(uri);
+    return true;
+  } catch {
+    return false;
+  }
+};
+
 export async function POST(req: Request) {
   try {
     const { userId } = auth();
-    const body = await req.json();
-    const { prompt } = body;
+    const body: VideoRequestBody = await req.json();
+    const { 
+      prompt, 
+      first_frame_image, 
+      subject_reference,
+      prompt_optimizer = true 
+    } = body;
 
     if (!userId) {
       return new NextResponse("Unauthorized", { status: 401 });
@@ -21,6 +42,14 @@ export async function POST(req: Request) {
 
     if (!prompt) {
       return new NextResponse("Prompt is required", { status: 400 });
+    }
+
+    if (first_frame_image && !isValidUri(first_frame_image)) {
+      return new NextResponse("Invalid first frame image URL", { status: 400 });
+    }
+
+    if (subject_reference && !isValidUri(subject_reference)) {
+      return new NextResponse("Invalid subject reference URL", { status: 400 });
     }
 
     const freeTrial = await checkApiLimit();
@@ -31,10 +60,13 @@ export async function POST(req: Request) {
     }
 
     const response = await replicate.run(
-      "anotherjesse/zeroscope-v2-xl:9f747673945c62801b13b84701c783929c0ee784e4748ec062204894dda1a351",
+      "minimax/video-01",
       {
         input: {
-          prompt_a: prompt,
+          prompt,
+          prompt_optimizer,
+          ...(first_frame_image && { first_frame_image }),
+          ...(subject_reference && { subject_reference })
         },
       }
     );
@@ -43,9 +75,29 @@ export async function POST(req: Request) {
       await increaseAPILimit();
     }
 
-    return NextResponse.json(response);
+    console.log("Replicate Response:", response);
+
+    // If response is a string (URL), return it
+    if (typeof response === 'string') {
+      return NextResponse.json({ url: response });
+    }
+
+    // If response is a ReadableStream
+    if (response instanceof ReadableStream) {
+      // Pass through the stream directly
+      return new NextResponse(response);
+    }
+
+    // If response is something else (like an object with a URL)
+    if (response && typeof response === 'object' && 'url' in response) {
+      return NextResponse.json({ url: response.url });
+    }
+
+    // Handle unexpected response format
+    throw new Error('Unexpected response format from Replicate');
+
   } catch (error) {
-    console.log(["[VIDEO_ERROR", error]);
+    console.error("[VIDEO_ERROR]", error);
     return new NextResponse("Internal error", { status: 500 });
   }
 }
