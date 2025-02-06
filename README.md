@@ -82,6 +82,31 @@ An agile approach will guide the project with iterative sprints and user feedbac
 
 Inception AI aims to democratize advanced AI functionalities through a user-friendly platform. By integrating ChatGPT and using innovative technologies, the project enhances user productivity and offers flexible pricing, showcasing strong technical expertise and aligning with Capstone objectives.
 
+## **Known Issues**  
+
+The video and audio generation models have occasionally been observed to take an extended time to produce content in deployment. As a result, API requests may time out before a response is received.  
+
+To mitigate this, a `vercel.json` file was introduced to extend the API call timeout to **300 seconds**. The root cause of the delay appears to be that the model generation engine sometimes starts in a **cold state**, requiring additional time to warm up before producing content.  
+
+---
+
+## **Upcoming Improvements**  
+
+To further enhance reliability, a **polling-based solution** will be implemented. This approach will ensure more consistent API responses while preventing timeouts. However, it requires refactoring the following components:  
+
+- **API Endpoint:** Adjustments to support polling logic.  
+- **Loader Component:** Introduction of a new component to handle real-time status updates.  
+- **UI Updates:** Enhancements to display loading states and final results more effectively.  
+
+### **Expected Benefits:**  
+✅ More reliable API calls.  
+✅ Improved user experience with real-time status updates.  
+✅ Elimination of timeouts.  
+✅ Better compatibility with a serverless architecture.  
+
+A ticket has been created in the project Kanban to track the implementation of these improvements.  
+
+
 </div>
 
 <!-- -------------------------------------------------------------------------- -->
