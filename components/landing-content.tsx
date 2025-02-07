@@ -7,7 +7,7 @@ const testimonionals = [
         name: "Tendai",
         avatar: "A",
         title: "Software Engineer",
-        description: "This is the best application I've used!"
+        description: "The code generated from Inception AI have helped make with daily tasks!"
     },
     {
         name: "Rebotile",
@@ -19,7 +19,7 @@ const testimonionals = [
         name: "Modika",
         avatar: "A",
         title: "UI/UX Engineer",
-        description: "This is the best application I've used!"
+        description: "Inception AI is now a part of my daily work-flows!"
     },
 ]
 

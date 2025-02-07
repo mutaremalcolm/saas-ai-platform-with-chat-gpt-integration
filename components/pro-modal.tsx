@@ -59,7 +59,7 @@ const tools = [
       color: "text-green-700",
       bgColor: "bg-green-700/10",
     }
-  ]
+]
 
 export const ProModal = () => {
     const proModal = useProModal();
@@ -86,17 +86,26 @@ export const ProModal = () => {
                         <DialogTitle className="flex justify-center items-center flex-col gap-y-4 pb-2">
                             <div className="flex items-center gap-x-2 font-bold py-1">
                             Upgrade to Genius
-                            <Badge variant = "premium" className="uppercase text-sm py-1">
+                            <Badge variant="premium" className="uppercase text-sm py-1">
                                 pro
                             </Badge>
                             </div>
                         </DialogTitle>
                         <DialogDescription className="text-center pt-2 space-y-2 text-zinc-900 font-medium">
+                            <Card className="p-4 border-yellow-500/20 bg-yellow-50 mb-4">
+                                <p className="text-sm text-yellow-800">
+                                    Heads up, your friendly developer Malcolm here. Stripe is still in test mode therefore the process to upgrade will be simulated. Please use the following on the card details:
+                                </p>
+                                <div className="mt-2 text-sm text-yellow-700 font-mono">
+                                    Card Number: 4444 4444 4444 4444<br/>
+                                    CCV: 444<br/>
+                                    Date of expiry: any future date beyond today
+                                </div>
+                            </Card>
                             {tools.map((tool) => (
                                 <Card
                                     key={tool.label}
-                                    className="p-3 border-black/5 flex items-center
-                                     justify-between"
+                                    className="p-3 border-black/5 flex items-center justify-between"
                                 >
                                     <div className="flex items-center gap-x-4">
                                         <div className={cn("p-2 w-fit rounded-md", tool.bgColor)}>
@@ -111,7 +120,7 @@ export const ProModal = () => {
                             ))}
                         </DialogDescription>
                     </DialogHeader>
-                    <DialogFooter >
+                    <DialogFooter>
                         <Button
                             disabled={loading}
                             onClick={onSubscribe}
@@ -128,5 +137,3 @@ export const ProModal = () => {
         </div>
     )
 }
-
-

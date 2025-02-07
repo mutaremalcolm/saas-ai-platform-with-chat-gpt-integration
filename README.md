@@ -106,6 +106,11 @@ To further enhance reliability, a **polling-based solution** will be implemented
 
 A ticket has been created in the project Kanban to track the implementation of these improvements.  
 
+### **Automated Testing:** 
+
+To ensure the app remains robust automated tests will be introduced to offer testing of all components.
+Jest testing Library will be used to test the application
+
 
 </div>
 
