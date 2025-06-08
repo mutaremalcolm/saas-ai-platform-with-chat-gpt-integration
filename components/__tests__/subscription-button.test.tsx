@@ -131,15 +131,6 @@ describe('SubscriptionButton', () => {
       expect(zapIcon).toHaveClass('w-4 h-4 ml-2 fill-white')
     })
 
-    // it('renders correctly when isPro is not provided (defaults to false)', () => {
-    //   render(<SubscriptionButton />)
-
-    //   const button = screen.getByTestId('subscription-button')
-    //   expect(button).toHaveTextContent('Upgrade')
-    //   expect(button).toHaveAttribute('data-variant', 'premium')
-    //   expect(screen.getByTestId('zap-icon')).toBeInTheDocument()
-    // })
-
     it('handles successful API call for non-pro user', async () => {
       const mockResponse = { data: { url: 'https://stripe.com/checkout' } }
       mockedAxios.get.mockResolvedValueOnce(mockResponse)
