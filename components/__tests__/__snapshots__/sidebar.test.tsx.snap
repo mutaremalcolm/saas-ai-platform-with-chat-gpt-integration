@@ -1,0 +1,1551 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Sidebar Component Snapshots > renders correctly for free user with API limit 1`] = `
+<div
+  class="space-y-4 py-4 flex flex-col h-full
+    bg-[#111827] text-white"
+>
+  <div
+    class="px-3 py-2 flex-1"
+  >
+    <a
+      class="flex
+            items-center pl-3 mb-14"
+      href="/dashboard"
+    >
+      <div
+        class="relative w-8 h-8 mr-4"
+      >
+        <img
+          alt="Logo"
+          data-fill="true"
+          src="/logo.png"
+        />
+      </div>
+      <h1
+        class="text-2xl font-bold font-montserrat"
+      >
+        Inception
+      </h1>
+    </a>
+    <div
+      class="space-y-1"
+    >
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/dashboard"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-sky-500"
+            data-testid="dashboard-icon"
+          >
+            Dashboard
+          </div>
+          DashBoard
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-white bg-white/10"
+        href="/conversation"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-violet-500"
+            data-testid="message-icon"
+          >
+            Message
+          </div>
+          Conversation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/image"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-pink-700"
+            data-testid="image-icon"
+          >
+            Image
+          </div>
+          Image Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/video"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-orange-700"
+            data-testid="video-icon"
+          >
+            Video
+          </div>
+          Video Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/music"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-emerald-500"
+            data-testid="music-icon"
+          >
+            Music
+          </div>
+          Music Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/code"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-green-700"
+            data-testid="code-icon"
+          >
+            Code
+          </div>
+          Code Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/settings"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3"
+            data-testid="settings-icon"
+          >
+            Settings
+          </div>
+          Settings
+        </div>
+      </a>
+    </div>
+  </div>
+  <div
+    data-api-limit="3"
+    data-is-pro="false"
+    data-testid="free-counter"
+  >
+    Free Counter Component
+  </div>
+</div>
+`;
+
+exports[`Sidebar Component Snapshots > renders correctly for pro user 1`] = `
+<div
+  class="space-y-4 py-4 flex flex-col h-full
+    bg-[#111827] text-white"
+>
+  <div
+    class="px-3 py-2 flex-1"
+  >
+    <a
+      class="flex
+            items-center pl-3 mb-14"
+      href="/dashboard"
+    >
+      <div
+        class="relative w-8 h-8 mr-4"
+      >
+        <img
+          alt="Logo"
+          data-fill="true"
+          src="/logo.png"
+        />
+      </div>
+      <h1
+        class="text-2xl font-bold font-montserrat"
+      >
+        Inception
+      </h1>
+    </a>
+    <div
+      class="space-y-1"
+    >
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/dashboard"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-sky-500"
+            data-testid="dashboard-icon"
+          >
+            Dashboard
+          </div>
+          DashBoard
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/conversation"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-violet-500"
+            data-testid="message-icon"
+          >
+            Message
+          </div>
+          Conversation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-white bg-white/10"
+        href="/image"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-pink-700"
+            data-testid="image-icon"
+          >
+            Image
+          </div>
+          Image Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/video"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-orange-700"
+            data-testid="video-icon"
+          >
+            Video
+          </div>
+          Video Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/music"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-emerald-500"
+            data-testid="music-icon"
+          >
+            Music
+          </div>
+          Music Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/code"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-green-700"
+            data-testid="code-icon"
+          >
+            Code
+          </div>
+          Code Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/settings"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3"
+            data-testid="settings-icon"
+          >
+            Settings
+          </div>
+          Settings
+        </div>
+      </a>
+    </div>
+  </div>
+  <div
+    data-api-limit="10"
+    data-is-pro="true"
+    data-testid="free-counter"
+  >
+    Free Counter Component
+  </div>
+</div>
+`;
+
+exports[`Sidebar Component Snapshots > renders correctly with code route active 1`] = `
+<div
+  class="space-y-4 py-4 flex flex-col h-full
+    bg-[#111827] text-white"
+>
+  <div
+    class="px-3 py-2 flex-1"
+  >
+    <a
+      class="flex
+            items-center pl-3 mb-14"
+      href="/dashboard"
+    >
+      <div
+        class="relative w-8 h-8 mr-4"
+      >
+        <img
+          alt="Logo"
+          data-fill="true"
+          src="/logo.png"
+        />
+      </div>
+      <h1
+        class="text-2xl font-bold font-montserrat"
+      >
+        Inception
+      </h1>
+    </a>
+    <div
+      class="space-y-1"
+    >
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/dashboard"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-sky-500"
+            data-testid="dashboard-icon"
+          >
+            Dashboard
+          </div>
+          DashBoard
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/conversation"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-violet-500"
+            data-testid="message-icon"
+          >
+            Message
+          </div>
+          Conversation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/image"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-pink-700"
+            data-testid="image-icon"
+          >
+            Image
+          </div>
+          Image Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/video"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-orange-700"
+            data-testid="video-icon"
+          >
+            Video
+          </div>
+          Video Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/music"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-emerald-500"
+            data-testid="music-icon"
+          >
+            Music
+          </div>
+          Music Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-white bg-white/10"
+        href="/code"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-green-700"
+            data-testid="code-icon"
+          >
+            Code
+          </div>
+          Code Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/settings"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3"
+            data-testid="settings-icon"
+          >
+            Settings
+          </div>
+          Settings
+        </div>
+      </a>
+    </div>
+  </div>
+  <div
+    data-api-limit="7"
+    data-is-pro="true"
+    data-testid="free-counter"
+  >
+    Free Counter Component
+  </div>
+</div>
+`;
+
+exports[`Sidebar Component Snapshots > renders correctly with default props 1`] = `
+<div
+  class="space-y-4 py-4 flex flex-col h-full
+    bg-[#111827] text-white"
+>
+  <div
+    class="px-3 py-2 flex-1"
+  >
+    <a
+      class="flex
+            items-center pl-3 mb-14"
+      href="/dashboard"
+    >
+      <div
+        class="relative w-8 h-8 mr-4"
+      >
+        <img
+          alt="Logo"
+          data-fill="true"
+          src="/logo.png"
+        />
+      </div>
+      <h1
+        class="text-2xl font-bold font-montserrat"
+      >
+        Inception
+      </h1>
+    </a>
+    <div
+      class="space-y-1"
+    >
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-white bg-white/10"
+        href="/dashboard"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-sky-500"
+            data-testid="dashboard-icon"
+          >
+            Dashboard
+          </div>
+          DashBoard
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/conversation"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-violet-500"
+            data-testid="message-icon"
+          >
+            Message
+          </div>
+          Conversation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/image"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-pink-700"
+            data-testid="image-icon"
+          >
+            Image
+          </div>
+          Image Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/video"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-orange-700"
+            data-testid="video-icon"
+          >
+            Video
+          </div>
+          Video Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/music"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-emerald-500"
+            data-testid="music-icon"
+          >
+            Music
+          </div>
+          Music Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/code"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-green-700"
+            data-testid="code-icon"
+          >
+            Code
+          </div>
+          Code Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/settings"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3"
+            data-testid="settings-icon"
+          >
+            Settings
+          </div>
+          Settings
+        </div>
+      </a>
+    </div>
+  </div>
+  <div
+    data-api-limit="0"
+    data-is-pro="false"
+    data-testid="free-counter"
+  >
+    Free Counter Component
+  </div>
+</div>
+`;
+
+exports[`Sidebar Component Snapshots > renders correctly with different active routes 1`] = `
+<div
+  class="space-y-4 py-4 flex flex-col h-full
+    bg-[#111827] text-white"
+>
+  <div
+    class="px-3 py-2 flex-1"
+  >
+    <a
+      class="flex
+            items-center pl-3 mb-14"
+      href="/dashboard"
+    >
+      <div
+        class="relative w-8 h-8 mr-4"
+      >
+        <img
+          alt="Logo"
+          data-fill="true"
+          src="/logo.png"
+        />
+      </div>
+      <h1
+        class="text-2xl font-bold font-montserrat"
+      >
+        Inception
+      </h1>
+    </a>
+    <div
+      class="space-y-1"
+    >
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/dashboard"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-sky-500"
+            data-testid="dashboard-icon"
+          >
+            Dashboard
+          </div>
+          DashBoard
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/conversation"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-violet-500"
+            data-testid="message-icon"
+          >
+            Message
+          </div>
+          Conversation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/image"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-pink-700"
+            data-testid="image-icon"
+          >
+            Image
+          </div>
+          Image Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-white bg-white/10"
+        href="/video"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-orange-700"
+            data-testid="video-icon"
+          >
+            Video
+          </div>
+          Video Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/music"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-emerald-500"
+            data-testid="music-icon"
+          >
+            Music
+          </div>
+          Music Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/code"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-green-700"
+            data-testid="code-icon"
+          >
+            Code
+          </div>
+          Code Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/settings"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3"
+            data-testid="settings-icon"
+          >
+            Settings
+          </div>
+          Settings
+        </div>
+      </a>
+    </div>
+  </div>
+  <div
+    data-api-limit="5"
+    data-is-pro="false"
+    data-testid="free-counter"
+  >
+    Free Counter Component
+  </div>
+</div>
+`;
+
+exports[`Sidebar Component Snapshots > renders correctly with maximum API limit count 1`] = `
+<div
+  class="space-y-4 py-4 flex flex-col h-full
+    bg-[#111827] text-white"
+>
+  <div
+    class="px-3 py-2 flex-1"
+  >
+    <a
+      class="flex
+            items-center pl-3 mb-14"
+      href="/dashboard"
+    >
+      <div
+        class="relative w-8 h-8 mr-4"
+      >
+        <img
+          alt="Logo"
+          data-fill="true"
+          src="/logo.png"
+        />
+      </div>
+      <h1
+        class="text-2xl font-bold font-montserrat"
+      >
+        Inception
+      </h1>
+    </a>
+    <div
+      class="space-y-1"
+    >
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-white bg-white/10"
+        href="/dashboard"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-sky-500"
+            data-testid="dashboard-icon"
+          >
+            Dashboard
+          </div>
+          DashBoard
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/conversation"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-violet-500"
+            data-testid="message-icon"
+          >
+            Message
+          </div>
+          Conversation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/image"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-pink-700"
+            data-testid="image-icon"
+          >
+            Image
+          </div>
+          Image Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/video"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-orange-700"
+            data-testid="video-icon"
+          >
+            Video
+          </div>
+          Video Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/music"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-emerald-500"
+            data-testid="music-icon"
+          >
+            Music
+          </div>
+          Music Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/code"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-green-700"
+            data-testid="code-icon"
+          >
+            Code
+          </div>
+          Code Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/settings"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3"
+            data-testid="settings-icon"
+          >
+            Settings
+          </div>
+          Settings
+        </div>
+      </a>
+    </div>
+  </div>
+  <div
+    data-api-limit="999"
+    data-is-pro="false"
+    data-testid="free-counter"
+  >
+    Free Counter Component
+  </div>
+</div>
+`;
+
+exports[`Sidebar Component Snapshots > renders correctly with music route active 1`] = `
+<div
+  class="space-y-4 py-4 flex flex-col h-full
+    bg-[#111827] text-white"
+>
+  <div
+    class="px-3 py-2 flex-1"
+  >
+    <a
+      class="flex
+            items-center pl-3 mb-14"
+      href="/dashboard"
+    >
+      <div
+        class="relative w-8 h-8 mr-4"
+      >
+        <img
+          alt="Logo"
+          data-fill="true"
+          src="/logo.png"
+        />
+      </div>
+      <h1
+        class="text-2xl font-bold font-montserrat"
+      >
+        Inception
+      </h1>
+    </a>
+    <div
+      class="space-y-1"
+    >
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/dashboard"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-sky-500"
+            data-testid="dashboard-icon"
+          >
+            Dashboard
+          </div>
+          DashBoard
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/conversation"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-violet-500"
+            data-testid="message-icon"
+          >
+            Message
+          </div>
+          Conversation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/image"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-pink-700"
+            data-testid="image-icon"
+          >
+            Image
+          </div>
+          Image Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/video"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-orange-700"
+            data-testid="video-icon"
+          >
+            Video
+          </div>
+          Video Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-white bg-white/10"
+        href="/music"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-emerald-500"
+            data-testid="music-icon"
+          >
+            Music
+          </div>
+          Music Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/code"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-green-700"
+            data-testid="code-icon"
+          >
+            Code
+          </div>
+          Code Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/settings"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3"
+            data-testid="settings-icon"
+          >
+            Settings
+          </div>
+          Settings
+        </div>
+      </a>
+    </div>
+  </div>
+  <div
+    data-api-limit="2"
+    data-is-pro="false"
+    data-testid="free-counter"
+  >
+    Free Counter Component
+  </div>
+</div>
+`;
+
+exports[`Sidebar Component Snapshots > renders correctly with no active route (unknown path) 1`] = `
+<div
+  class="space-y-4 py-4 flex flex-col h-full
+    bg-[#111827] text-white"
+>
+  <div
+    class="px-3 py-2 flex-1"
+  >
+    <a
+      class="flex
+            items-center pl-3 mb-14"
+      href="/dashboard"
+    >
+      <div
+        class="relative w-8 h-8 mr-4"
+      >
+        <img
+          alt="Logo"
+          data-fill="true"
+          src="/logo.png"
+        />
+      </div>
+      <h1
+        class="text-2xl font-bold font-montserrat"
+      >
+        Inception
+      </h1>
+    </a>
+    <div
+      class="space-y-1"
+    >
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/dashboard"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-sky-500"
+            data-testid="dashboard-icon"
+          >
+            Dashboard
+          </div>
+          DashBoard
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/conversation"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-violet-500"
+            data-testid="message-icon"
+          >
+            Message
+          </div>
+          Conversation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/image"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-pink-700"
+            data-testid="image-icon"
+          >
+            Image
+          </div>
+          Image Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/video"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-orange-700"
+            data-testid="video-icon"
+          >
+            Video
+          </div>
+          Video Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/music"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-emerald-500"
+            data-testid="music-icon"
+          >
+            Music
+          </div>
+          Music Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/code"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-green-700"
+            data-testid="code-icon"
+          >
+            Code
+          </div>
+          Code Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/settings"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3"
+            data-testid="settings-icon"
+          >
+            Settings
+          </div>
+          Settings
+        </div>
+      </a>
+    </div>
+  </div>
+  <div
+    data-api-limit="0"
+    data-is-pro="false"
+    data-testid="free-counter"
+  >
+    Free Counter Component
+  </div>
+</div>
+`;
+
+exports[`Sidebar Component Snapshots > renders correctly with pro user and high API count 1`] = `
+<div
+  class="space-y-4 py-4 flex flex-col h-full
+    bg-[#111827] text-white"
+>
+  <div
+    class="px-3 py-2 flex-1"
+  >
+    <a
+      class="flex
+            items-center pl-3 mb-14"
+      href="/dashboard"
+    >
+      <div
+        class="relative w-8 h-8 mr-4"
+      >
+        <img
+          alt="Logo"
+          data-fill="true"
+          src="/logo.png"
+        />
+      </div>
+      <h1
+        class="text-2xl font-bold font-montserrat"
+      >
+        Inception
+      </h1>
+    </a>
+    <div
+      class="space-y-1"
+    >
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/dashboard"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-sky-500"
+            data-testid="dashboard-icon"
+          >
+            Dashboard
+          </div>
+          DashBoard
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-white bg-white/10"
+        href="/conversation"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-violet-500"
+            data-testid="message-icon"
+          >
+            Message
+          </div>
+          Conversation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/image"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-pink-700"
+            data-testid="image-icon"
+          >
+            Image
+          </div>
+          Image Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/video"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-orange-700"
+            data-testid="video-icon"
+          >
+            Video
+          </div>
+          Video Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/music"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-emerald-500"
+            data-testid="music-icon"
+          >
+            Music
+          </div>
+          Music Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/code"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-green-700"
+            data-testid="code-icon"
+          >
+            Code
+          </div>
+          Code Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/settings"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3"
+            data-testid="settings-icon"
+          >
+            Settings
+          </div>
+          Settings
+        </div>
+      </a>
+    </div>
+  </div>
+  <div
+    data-api-limit="50"
+    data-is-pro="true"
+    data-testid="free-counter"
+  >
+    Free Counter Component
+  </div>
+</div>
+`;
+
+exports[`Sidebar Component Snapshots > renders correctly with settings route active 1`] = `
+<div
+  class="space-y-4 py-4 flex flex-col h-full
+    bg-[#111827] text-white"
+>
+  <div
+    class="px-3 py-2 flex-1"
+  >
+    <a
+      class="flex
+            items-center pl-3 mb-14"
+      href="/dashboard"
+    >
+      <div
+        class="relative w-8 h-8 mr-4"
+      >
+        <img
+          alt="Logo"
+          data-fill="true"
+          src="/logo.png"
+        />
+      </div>
+      <h1
+        class="text-2xl font-bold font-montserrat"
+      >
+        Inception
+      </h1>
+    </a>
+    <div
+      class="space-y-1"
+    >
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/dashboard"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-sky-500"
+            data-testid="dashboard-icon"
+          >
+            Dashboard
+          </div>
+          DashBoard
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/conversation"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-violet-500"
+            data-testid="message-icon"
+          >
+            Message
+          </div>
+          Conversation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/image"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-pink-700"
+            data-testid="image-icon"
+          >
+            Image
+          </div>
+          Image Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/video"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-orange-700"
+            data-testid="video-icon"
+          >
+            Video
+          </div>
+          Video Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/music"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-emerald-500"
+            data-testid="music-icon"
+          >
+            Music
+          </div>
+          Music Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-zinc-400"
+        href="/code"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3 text-green-700"
+            data-testid="code-icon"
+          >
+            Code
+          </div>
+          Code Generation
+        </div>
+      </a>
+      <a
+        class="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lgtransition text-white bg-white/10"
+        href="/settings"
+      >
+        <div
+          class="flex items-center flex-1"
+        >
+          <div
+            class="h-5 w-5 mr-3"
+            data-testid="settings-icon"
+          >
+            Settings
+          </div>
+          Settings
+        </div>
+      </a>
+    </div>
+  </div>
+  <div
+    data-api-limit="1"
+    data-is-pro="false"
+    data-testid="free-counter"
+  >
+    Free Counter Component
+  </div>
+</div>
+`;
