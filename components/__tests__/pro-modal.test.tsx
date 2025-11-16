@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { ProModal } from '../../components/pro-modal';
+import { ProModal } from '../pro-modal';
 import { useProModal } from '@/hooks/use-pro-modal';
 
 vi.mock('@/hooks/use-pro-modal');

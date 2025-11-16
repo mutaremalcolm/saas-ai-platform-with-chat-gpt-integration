@@ -1,0 +1,63 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Heading > Component structure > matches snapshot with all props 1`] = `
+<div>
+  <div
+    class="px-4 lg:px-8 flex items-center gap-x-3 mb-8"
+  >
+    <div
+      class="p-2 w-fit rounded-md bg-violet-500/10"
+    >
+      <div
+        class="w-10 h-10 text-violet-500"
+        data-testid="icon"
+      >
+        Icon
+      </div>
+    </div>
+    <div>
+      <h2
+        class="text-3xl font-bold"
+      >
+        Conversation
+      </h2>
+      <p
+        class="text-sm text-muted-foreground"
+      >
+        Chat with AI
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Heading > Component structure > matches snapshot without optional props 1`] = `
+<div>
+  <div
+    class="px-4 lg:px-8 flex items-center gap-x-3 mb-8"
+  >
+    <div
+      class="p-2 w-fit rounded-md"
+    >
+      <div
+        class="w-10 h-10"
+        data-testid="icon"
+      >
+        Icon
+      </div>
+    </div>
+    <div>
+      <h2
+        class="text-3xl font-bold"
+      >
+        Test
+      </h2>
+      <p
+        class="text-sm text-muted-foreground"
+      >
+        Test description
+      </p>
+    </div>
+  </div>
+</div>
+`;

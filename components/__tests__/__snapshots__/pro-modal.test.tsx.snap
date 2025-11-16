@@ -1,0 +1,39 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProModal Snapshots > Accessibility Snapshots > should match snapshot for button with all attributes 1`] = `null`;
+
+exports[`ProModal Snapshots > Accessibility Snapshots > should match snapshot for semantic structure 1`] = `<div />`;
+
+exports[`ProModal Snapshots > Badge and Icon Snapshots > should match snapshot for premium badge 1`] = `null`;
+
+exports[`ProModal Snapshots > Badge and Icon Snapshots > should match snapshot for zap icon in button 1`] = `null`;
+
+exports[`ProModal Snapshots > Component Structure Snapshots > should match snapshot for dialog header section 1`] = `null`;
+
+exports[`ProModal Snapshots > Component Structure Snapshots > should match snapshot for tools section 1`] = `null`;
+
+exports[`ProModal Snapshots > Component Structure Snapshots > should match snapshot for upgrade button section 1`] = `null`;
+
+exports[`ProModal Snapshots > Modal Closed State > should match snapshot when modal is closed 1`] = `
+<div>
+  <div />
+</div>
+`;
+
+exports[`ProModal Snapshots > Modal Open State > should match snapshot when modal is open 1`] = `
+<div
+  aria-hidden="true"
+  data-aria-hidden="true"
+>
+  <div />
+</div>
+`;
+
+exports[`ProModal Snapshots > Modal Open State > should match snapshot with different onClose handler 1`] = `
+<div
+  aria-hidden="true"
+  data-aria-hidden="true"
+>
+  <div />
+</div>
+`;
