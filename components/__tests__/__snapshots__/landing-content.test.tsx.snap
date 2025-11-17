@@ -1,0 +1,116 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`LandingContent > matches snapshot 1`] = `
+<div>
+  <div
+    class="px-10 pb-20"
+  >
+    <h2
+      class="text-center text-4xl text-white font-extrabold mb-10"
+    >
+      Testimonionals
+    </h2>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 
+            lg:grid-cols-3 gap-4"
+    >
+      <div
+        class="bg-[#192339] border-none text-white"
+        data-testid="card"
+      >
+        <div
+          data-testid="card-header"
+        >
+          <div
+            class="flex items-center gap-x-2"
+            data-testid="card-title"
+          >
+            <div>
+              <p
+                class="text-lg"
+              >
+                Tendai
+              </p>
+              <p
+                class="text-zinc-400 text-sm"
+              >
+                Software Engineer
+              </p>
+            </div>
+          </div>
+          <div
+            class="pt-4 px-0"
+            data-testid="card-content"
+          >
+            This is the best application I've used!
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-[#192339] border-none text-white"
+        data-testid="card"
+      >
+        <div
+          data-testid="card-header"
+        >
+          <div
+            class="flex items-center gap-x-2"
+            data-testid="card-title"
+          >
+            <div>
+              <p
+                class="text-lg"
+              >
+                Rebotile
+              </p>
+              <p
+                class="text-zinc-400 text-sm"
+              >
+                Quality Assurance
+              </p>
+            </div>
+          </div>
+          <div
+            class="pt-4 px-0"
+            data-testid="card-content"
+          >
+            This is the best application I've used!
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-[#192339] border-none text-white"
+        data-testid="card"
+      >
+        <div
+          data-testid="card-header"
+        >
+          <div
+            class="flex items-center gap-x-2"
+            data-testid="card-title"
+          >
+            <div>
+              <p
+                class="text-lg"
+              >
+                Modika
+              </p>
+              <p
+                class="text-zinc-400 text-sm"
+              >
+                UI/UX Engineer
+              </p>
+            </div>
+          </div>
+          <div
+            class="pt-4 px-0"
+            data-testid="card-content"
+          >
+            This is the best application I've used!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
