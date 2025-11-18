@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ModalProvider > matches snapshot 1`] = `
+<div>
+  <div
+    data-testid="pro-modal"
+  >
+    Pro Modal
+  </div>
+</div>
+`;

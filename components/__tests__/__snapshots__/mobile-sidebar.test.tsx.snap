@@ -1,0 +1,40 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MobileSidebar > matches snapshot 1`] = `
+<div>
+  <div
+    data-testid="sheet"
+  >
+    <div
+      data-as-child="true"
+      data-testid="sheet-trigger"
+    >
+      <button
+        class="md:hidden"
+        data-size="icon"
+        data-testid="mobile-menu-button"
+        data-variant="ghost"
+      >
+        <div
+          data-testid="menu-icon"
+        >
+          Menu
+        </div>
+      </button>
+    </div>
+    <div
+      class="p-0"
+      data-side="left"
+      data-testid="sheet-content"
+    >
+      <div
+        data-api-limit="5"
+        data-is-pro="false"
+        data-testid="sidebar"
+      >
+        Sidebar Content
+      </div>
+    </div>
+  </div>
+</div>
+`;
