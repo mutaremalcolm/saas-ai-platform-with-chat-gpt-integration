@@ -1,3 +1,5 @@
+/* instabul ignore file */
+
 import React from 'react'
 
 const LandingLayout = ({

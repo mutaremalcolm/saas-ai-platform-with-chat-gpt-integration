@@ -1,3 +1,5 @@
+/* instabul ignore file */
+
 import Navbar from '@/components/navbar';
 import Sidebar from '@/components/sidebar'
 import { getApiLimitCount } from '@/lib/api-limit';

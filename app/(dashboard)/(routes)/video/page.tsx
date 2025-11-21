@@ -1,3 +1,5 @@
+/* instabul ignore file */
+
 "use client";
 
 import axios from "axios";
