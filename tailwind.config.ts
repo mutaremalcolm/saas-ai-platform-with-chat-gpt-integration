@@ -1,3 +1,5 @@
+/* instabul ignore file */
+
 import type { Config } from "tailwindcss";
 
 const config: Config = {
