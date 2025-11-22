@@ -1,0 +1,93 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`LandingNavBar > Snapshots > matches snapshot for signed in user 1`] = `
+<div>
+  <nav
+    class="p-4 bg-transparent flex items-center justify-between"
+  >
+    <a
+      class="flex items-center"
+      data-testid="link"
+      href="/"
+    >
+      <div
+        class="relative h-8 w-8 mr-4"
+      >
+        <img
+          alt="logo"
+          data-fill="true"
+          data-testid="logo-image"
+          src="/logo.png"
+        />
+      </div>
+      <h1
+        class="text-2xl font-bold text-white font-montserrat"
+      >
+        Inception
+      </h1>
+    </a>
+    <div
+      class="flex items-center gap-x-2"
+    >
+      <a
+        data-testid="link"
+        href="/dashboard"
+      >
+        <button
+          class="rounded-full"
+          data-testid="get-started-button"
+          data-variant="outline"
+        >
+          Get Started
+        </button>
+      </a>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`LandingNavBar > Snapshots > matches snapshot for signed out user 1`] = `
+<div>
+  <nav
+    class="p-4 bg-transparent flex items-center justify-between"
+  >
+    <a
+      class="flex items-center"
+      data-testid="link"
+      href="/"
+    >
+      <div
+        class="relative h-8 w-8 mr-4"
+      >
+        <img
+          alt="logo"
+          data-fill="true"
+          data-testid="logo-image"
+          src="/logo.png"
+        />
+      </div>
+      <h1
+        class="text-2xl font-bold text-white font-montserrat"
+      >
+        Inception
+      </h1>
+    </a>
+    <div
+      class="flex items-center gap-x-2"
+    >
+      <a
+        data-testid="link"
+        href="/sign-up"
+      >
+        <button
+          class="rounded-full"
+          data-testid="get-started-button"
+          data-variant="outline"
+        >
+          Get Started
+        </button>
+      </a>
+    </div>
+  </nav>
+</div>
+`;

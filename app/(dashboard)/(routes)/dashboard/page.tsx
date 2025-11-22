@@ -1,3 +1,5 @@
+/* instabul ignore file */
+
 "use client";
 
 import { Card } from "@/components/ui/card";

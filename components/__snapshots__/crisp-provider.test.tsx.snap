@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CrispProvider > matches snapshot 1`] = `
+<div>
+  <div
+    data-testid="crisp-chat"
+  >
+    Crisp Chat
+  </div>
+</div>
+`;

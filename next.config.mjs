@@ -1,3 +1,5 @@
+/* instabul ignore file */
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {

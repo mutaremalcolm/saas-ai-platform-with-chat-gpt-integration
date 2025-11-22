@@ -1,0 +1,26 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Loader > matches snapshot 1`] = `
+<div>
+  <div
+    class="h-full flex flex-col gap-y-4 items-center
+        justify-center"
+  >
+    <div
+      class="w-10 h-10 relative animate-spin"
+    >
+      <img
+        alt="logo"
+        data-fill="true"
+        data-testid="loader-image"
+        src="/logo.png"
+      />
+    </div>
+    <p
+      class="text-sm text-muted-foreground"
+    >
+      Genius is thinking...
+    </p>
+  </div>
+</div>
+`;

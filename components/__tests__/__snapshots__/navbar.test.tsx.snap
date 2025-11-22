@@ -1,0 +1,51 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Navbar > matches snapshot for free user 1`] = `
+<div>
+  <div
+    class="flex items-center p-4"
+  >
+    <div
+      data-api-limit="3"
+      data-is-pro="false"
+      data-testid="mobile-sidebar"
+    >
+      Mobile Sidebar
+    </div>
+    <div
+      class="flex w-full justify-end"
+    >
+      <div
+        data-testid="user-button"
+      >
+        User Button
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Navbar > matches snapshot for pro user 1`] = `
+<div>
+  <div
+    class="flex items-center p-4"
+  >
+    <div
+      data-api-limit="10"
+      data-is-pro="true"
+      data-testid="mobile-sidebar"
+    >
+      Mobile Sidebar
+    </div>
+    <div
+      class="flex w-full justify-end"
+    >
+      <div
+        data-testid="user-button"
+      >
+        User Button
+      </div>
+    </div>
+  </div>
+</div>
+`;

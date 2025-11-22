@@ -1,0 +1,154 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FreeCounter > Component structure > matches snapshot for free user at limit 1`] = `
+<div>
+  <div
+    class="px-3"
+  >
+    <div
+      class="bg-white/10 border-0"
+      data-testid="card"
+    >
+      <div
+        class="py-6"
+        data-testid="card-content"
+      >
+        <div
+          class="text-center text-sm text-white mb-4 space-y-2"
+        >
+          <p>
+            5
+             / 
+            5
+             Free Generations
+          </p>
+          <div
+            class="h-3"
+            data-testid="progress"
+            data-value="100"
+          >
+            Progress: 
+            100
+            %
+          </div>
+        </div>
+        <button
+          class="w-full"
+          data-testid="upgrade-button"
+          data-variant="premium"
+        >
+          Upgrade
+          <div
+            class="w-4 h-4 ml-2 fill-light"
+            data-testid="zap-icon"
+          >
+            ⚡
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FreeCounter > Component structure > matches snapshot for free user with no generations 1`] = `
+<div>
+  <div
+    class="px-3"
+  >
+    <div
+      class="bg-white/10 border-0"
+      data-testid="card"
+    >
+      <div
+        class="py-6"
+        data-testid="card-content"
+      >
+        <div
+          class="text-center text-sm text-white mb-4 space-y-2"
+        >
+          <p>
+            0
+             / 
+            5
+             Free Generations
+          </p>
+          <div
+            class="h-3"
+            data-testid="progress"
+            data-value="0"
+          >
+            Progress: 
+            0
+            %
+          </div>
+        </div>
+        <button
+          class="w-full"
+          data-testid="upgrade-button"
+          data-variant="premium"
+        >
+          Upgrade
+          <div
+            class="w-4 h-4 ml-2 fill-light"
+            data-testid="zap-icon"
+          >
+            ⚡
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FreeCounter > Component structure > matches snapshot for free user with partial generations 1`] = `
+<div>
+  <div
+    class="px-3"
+  >
+    <div
+      class="bg-white/10 border-0"
+      data-testid="card"
+    >
+      <div
+        class="py-6"
+        data-testid="card-content"
+      >
+        <div
+          class="text-center text-sm text-white mb-4 space-y-2"
+        >
+          <p>
+            3
+             / 
+            5
+             Free Generations
+          </p>
+          <div
+            class="h-3"
+            data-testid="progress"
+            data-value="60"
+          >
+            Progress: 
+            60
+            %
+          </div>
+        </div>
+        <button
+          class="w-full"
+          data-testid="upgrade-button"
+          data-variant="premium"
+        >
+          Upgrade
+          <div
+            class="w-4 h-4 ml-2 fill-light"
+            data-testid="zap-icon"
+          >
+            ⚡
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

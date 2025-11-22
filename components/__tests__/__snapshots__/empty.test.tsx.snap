@@ -1,0 +1,26 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Empty > matches snapshot 1`] = `
+<div>
+  <div
+    class="h-full p-20 flex flex-col items-center
+  justify-center"
+  >
+    <div
+      class="relative h-72 w-72"
+    >
+      <img
+        alt="Empty"
+        data-fill="true"
+        data-testid="empty-image"
+        src="/empty.png"
+      />
+    </div>
+    <p
+      class="text-muted-foreground text-sm text-center"
+    >
+      No conversation started.
+    </p>
+  </div>
+</div>
+`;

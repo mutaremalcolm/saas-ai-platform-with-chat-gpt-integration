@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BotAvatar > renders complete component structure 1`] = `
+<div
+  class="h-8 w-8"
+  data-testid="avatar"
+>
+  <img
+    alt="bot avatar"
+    class="p-1"
+    data-testid="avatar-image"
+    src="/logo.png"
+  />
+</div>
+`;
