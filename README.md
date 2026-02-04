@@ -7,7 +7,7 @@
   <h2>British Computer Society Capstone Project</h2>
   <h4>Inception_AI<h4>
   <h3> 
-    <a href='https://saa-s-ai-platform-with-chat-gpt-integration.vercel.app//' target='_blank'>
+    <a href='https://inception.center/' target='_blank'>
       <h5>live demo ↗</h5>
     </a>
   </h3>
