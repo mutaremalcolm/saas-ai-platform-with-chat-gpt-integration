@@ -42,7 +42,7 @@ exports[`LandingContent > matches snapshot 1`] = `
             class="pt-4 px-0"
             data-testid="card-content"
           >
-            This is the best application I've used!
+            The code generated from Inception AI have helped make with daily tasks!
           </div>
         </div>
       </div>
@@ -106,7 +106,7 @@ exports[`LandingContent > matches snapshot 1`] = `
             class="pt-4 px-0"
             data-testid="card-content"
           >
-            This is the best application I've used!
+            Inception AI is now a part of my daily work-flows!
           </div>
         </div>
       </div>

@@ -78,7 +78,7 @@ describe('LandingContent', () => {
     render(<LandingContent />)
 
     const descriptions = screen.getAllByText("This is the best application I've used!")
-    expect(descriptions).toHaveLength(3)
+    expect(descriptions).toHaveLength(1)
   })
 
   it('applies correct wrapper styling', () => {
