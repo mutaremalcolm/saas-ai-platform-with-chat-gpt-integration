@@ -92,7 +92,7 @@ export const ProModal = () => {
                             </div>
                         </DialogTitle>
                         <DialogDescription className="text-center pt-2 space-y-2 text-zinc-900 font-medium">
-                            <Card className="p-4 border-yellow-500/20 bg-yellow-50 mb-4">
+                            {/* <Card className="p-4 border-yellow-500/20 bg-yellow-50 mb-4">
                                 <p className="text-sm text-yellow-800">
                                     Heads up, your friendly developer Malcolm here. Stripe is still in test mode therefore the process to upgrade will be simulated. Please use the following on the card details:
                                 </p>
@@ -101,7 +101,7 @@ export const ProModal = () => {
                                     CCV: 444<br/>
                                     Date of expiry: any future date beyond today
                                 </div>
-                            </Card>
+                            </Card> */}
                             {tools.map((tool) => (
                                 <Card
                                     key={tool.label}
